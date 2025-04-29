@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirtan Desai - Windows XP Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tahoma&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="desktop">
+        <!-- Desktop icons -->
+        <div class="desktop-icons">
+            <div class="icon" data-app="projects">
+                <img src="images/folder.png" alt="My Projects">
+                <span>My Projects</span>
+            </div>
+            <div class="icon" data-app="experience">
+                <img src="images/notepad.png" alt="Experience">
+                <span>Experience</span>
+            </div>
+            <div class="icon" data-app="resume">
+                <img src="images/word.png" alt="Resume">
+                <span>Resume</span>
+            </div>
+            <div class="icon" data-app="contact">
+                <img src="images/msn.png" alt="Contact Me">
+                <span>Contact Me</span>
+            </div>
+            <div class="icon" data-app="about">
+                <img src="images/my_computer.png" alt="About Me">
+                <span>About Me</span>
+            </div>
+        </div>
+
+        <!-- Right-click context menu -->
+        <div id="context-menu" class="context-menu">
+            <div class="menu-item">View</div>
+            <div class="menu-item">Sort By</div>
+            <div class="menu-item">Refresh</div>
+            <div class="menu-separator"></div>
+            <div class="menu-item" id="change-wallpaper">Change Wallpaper</div>
+            <div class="menu-separator"></div>
+            <div class="menu-item">Properties</div>
+        </div>
+
+        <!-- Start menu and taskbar -->
+        <div id="taskbar">
+            <div id="start-button">
+                <img src="images/windows-logo.png" alt="Start">
+                <span>Start</span>
+            </div>
+            <div id="open-windows"></div>
+            <div id="system-tray">
+                <div id="clock"></div>
+            </div>
+        </div>
+
+        <!-- Start menu -->
+        <div id="start-menu" class="hidden">
+            <div class="start-header">
+                <div class="user-info">
+                    <img src="images/user.png" alt="User">
+                    <span>Kirtan Desai</span>
+                </div>
+            </div>
+            <div class="start-content">
+                <div class="left-panel">
+                    <div class="start-item">
+                        <img src="images/internet.png" alt="Internet">
+                        <span>Internet</span>
+                    </div>
+                    <div class="start-item">
+                        <img src="images/email.png" alt="E-mail">
+                        <span>E-mail</span>
+                    </div>
+                    <div class="start-separator"></div>
+                    <div class="start-item">
+                        <img src="images/documents.png" alt="My Documents">
+                        <span>My Documents</span>
+                    </div>
+                    <div class="start-item">
+                        <img src="images/my_pictures.png" alt="My Pictures">
+                        <span>My Pictures</span>
+                    </div>
+                    <div class="start-item">
+                        <img src="images/my_music.png" alt="My Music">
+                        <span>My Music</span>
+                    </div>
+                    <div class="start-item">
+                        <img src="images/control_panel.png" alt="Control Panel">
+                        <span>Control Panel</span>
+                    </div>
+                </div>
+                <div class="right-panel">
+                    <div class="start-program">
+                        <img src="images/projects.png" alt="Projects">
+                        <span>Projects</span>
+                    </div>
+                    <div class="start-program">
+                        <img src="images/experience.png" alt="Experience">
+                        <span>Experience</span>
+                    </div>
+                    <div class="start-program">
+                        <img src="images/resume.png" alt="Resume">
+                        <span>Resume</span>
+                    </div>
+                    <div class="start-program">
+                        <img src="images/contact.png" alt="Contact">
+                        <span>Contact</span>
+                    </div>
+                </div>
+            </div>
+            <div class="start-footer">
+                <div class="start-footer-item">
+                    <img src="images/shutdown.png" alt="Shut Down">
+                    <span>Shut Down</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Windows templates -->
+    <!-- Projects Window -->
+    <div class="window" id="projects-window" data-app="projects">
+        <div class="window-header">
+            <div class="window-title">
+                <img src="images/folder.png" alt="Projects">
+                <span>My Projects</span>
+            </div>
+            <div class="window-controls">
+                <button class="minimize">_</button>
+                <button class="maximize">□</button>
+                <button class="close">✕</button>
+            </div>
+        </div>
+        <div class="window-menu">
+            <div class="menu-item">File</div>
+            <div class="menu-item">Edit</div>
+            <div class="menu-item">View</div>
+            <div class="menu-item">Tools</div>
+            <div class="menu-item">Help</div>
+        </div>
+        <div class="window-content">
+            <div class="project-item">
+                <img src="images/project-icon.png" alt="Relay">
+                <h3>Relay - Realtime conversation platform</h3>
+                <p>Developed a real-time chat application supporting public, private, and group messaging, with over 15+ core features including online status tracking, file uploads, and profile management, by leveraging Django Channels, Redis and for an interactive, scalable experience. Reduced server-side API load by approximately 70% in internal benchmarks by using HTMX to dynamically update chat content.</p>
+                <a href="#" class="xp-button">View Project</a>
+            </div>
+            <div class="project-item">
+                <img src="images/project-icon.png" alt="Credit Card Fraud Detection">
+                <h3>Credit Card Fraud Detection</h3>
+                <p>Deployed a credit card fraud detection model using a Random Forest classifier, achieving an AUC score of 0.91 by analyzing a dataset of 300,000 transactions. Optimized model performance by tuning hyperparameters and employing cross-validation, which enhanced model robustness and reduced false positive rates by 40%.</p>
+                <a href="#" class="xp-button">View Project</a>
+            </div>
+            <div class="project-item">
+                <img src="images/project-icon.png" alt="Symphony">
+                <h3>Symphony - Music Library</h3>
+                <p>Led database design process for music library, resulting in a 30% reduction of redundant data through meticulous ER diagram crafting and relational schema normalization. Implemented multiple PL/SQL blocks to handle exceptions and complex functionalities. Demonstrated user data management, search functionality, playlist creation, and song playback logging on an interactive React front-end.</p>
+                <a href="#" class="xp-button">View Project</a>
+            </div>
+        </div>
+        <div class="window-status-bar">
+            <span>3 items</span>
+        </div>
+    </div>
+
+    <!-- Experience Window -->
+    <div class="window" id="experience-window" data-app="experience">
+        <div class="window-header">
+            <div class="window-title">
+                <img src="images/notepad.png" alt="Experience">
+                <span>Experience - Notepad</span>
+            </div>
+            <div class="window-controls">
+                <button class="minimize">_</button>
+                <button class="maximize">□</button>
+                <button class="close">✕</button>
+            </div>
+        </div>
+        <div class="window-menu">
+            <div class="menu-item">File</div>
+            <div class="menu-item">Edit</div>
+            <div class="menu-item">Format</div>
+            <div class="menu-item">View</div>
+            <div class="menu-item">Help</div>
+        </div>
+        <div class="window-content notepad-content">
+            <div class="experience-entry">
+                <h3>Student Societies - Managing Committee Member</h3>
+                <p class="date">Oct 2023 - May 2024</p>
+                <ul>
+                    <li>Organized WiE codathon with over 200 participants which covered framing questions, managing the event and promoting women's participation in the event</li>
+                    <li>Mentored committee members to enhance their skills for effective club management</li>
+                </ul>
+            </div>
+            <div class="experience-entry">
+                <h3>National Service Scheme - Volunteer</h3>
+                <p class="date">Feb 2023 - Dec 2023</p>
+                <ul>
+                    <li>Actively participated in social activities targeted for public and environmental welfare, such as volunteering for blood donation camps that collected more than 200 units of blood, potentially saving 600 lives</li>
+                    <li>Spearheaded beach cleaning drives, removing over 100 kgs of waste from our local coastline and promoting environmental awareness within the community</li>
+                </ul>
+            </div>
+            <div class="experience-entry">
+                <h3>Tech Tatva '23 - Organizing Committee Member</h3>
+                <p class="date">Aug 2023 - Oct 2023</p>
+                <ul>
+                    <li>Helped organize MIT Manipal's national level technical fest</li>
+                    <li>Responsible for organizing events with peers, which formed the core attraction of the Fest</li>
+                </ul>
+            </div>
+        </div>
+        <div class="window-status-bar">
+            <span>Ready</span>
+        </div>
+    </div>
+
+    <!-- Resume Window -->
+    <div class="window" id="resume-window" data-app="resume">
+        <div class="window-header">
+            <div class="window-title">
+                <img src="images/word.png" alt="Resume">
+                <span>Resume - Word Document</span>
+            </div>
+            <div class="window-controls">
+                <button class="minimize">_</button>
+                <button class="maximize">□</button>
+                <button class="close">✕</button>
+            </div>
+        </div>
+        <div class="window-menu">
+            <div class="menu-item">File</div>
+            <div class="menu-item">Edit</div>
+            <div class="menu-item">View</div>
+            <div class="menu-item">Insert</div>
+            <div class="menu-item">Format</div>
+            <div class="menu-item">Tools</div>
+            <div class="menu-item">Table</div>
+            <div class="menu-item">Help</div>
+        </div>
+        <div class="window-content word-content">
+            <div class="word-document">
+                <h1>KIRTAN DESAI</h1>
+                <p style="text-align: center; margin-bottom: 15px;">
+                    +91-6355453239 | krtndesai2004@gmail.com | <a href="https://linkedin.com/in/kirtandesai29">linkedin.com/in/kirtandesai29</a>
+                </p>
+                
+                <div class="resume-section">
+                    <h2>EDUCATION</h2>
+                    <div class="resume-item">
+                        <h3>Manipal Institute of Technology</h3>
+                        <p>BTech, Computer Science and Engineering with Specialization in Artificial Intelligence and Machine Learning</p>
+                        <p>2022 – 2026 (Expected) | Manipal, Karnataka</p>
+                        <p>CGPA: 8.54 / 10.00</p>
+                    </div>
+                    <div class="resume-item">
+                        <h3>Relevant Coursework</h3>
+                        <p>Data Structures and Algorithms, Object Oriented Programming, Database Systems, Operating Systems, Artificial Intelligence, Data Analytics, Engineering Mathematics, Machine Learning, Computer Vision, Big Data Analytics, Deep Learning, Web Programming, Parallel Programming</p>
+                    </div>
+                </div>
+                
+                <div class="resume-section">
+                    <h2>TECHNICAL SKILLS</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Programming Languages</h3>
+                            <ul>
+                                <li>C/C++</li>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>SQL</li>
+                                <li>Javascript</li>
+                                <li>HTML/CSS</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Libraries & Frameworks</h3>
+                            <ul>
+                                <li>Pandas</li>
+                                <li>Numpy</li>
+                                <li>Matplotlib</li>
+                                <li>Scikit-learn</li>
+                                <li>Bootstrap</li>
+                                <li>React</li>
+                                <li>JavaFX</li>
+                                <li>OpenCV</li>
+                                <li>Django</li>
+                                <li>PyTorch</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Tools & Technologies</h3>
+                            <ul>
+                                <li>Spark</li>
+                                <li>Hadoop</li>
+                                <li>HBase</li>
+                                <li>MongoDB</li>
+                                <li>MySQL</li>
+                                <li>Git</li>
+                                <li>Github</li>
+                                <li>Jupyter</li>
+                                <li>VS Code</li>
+                                <li>PyCharm</li>
+                                <li>CUDA</li>
+                                <li>MPI</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="download-section">
+                    <a href="#" class="xp-button">Download Full Resume (PDF)</a>
+                </div>
+            </div>
+        </div>
+        <div class="window-status-bar">
+            <span>Page 1 of 1</span>
+        </div>
+    </div>
+
+    <!-- Contact Window -->
+    <div class="window" id="contact-window" data-app="contact">
+        <div class="window-header">
+            <div class="window-title">
+                <img src="images/msn.png" alt="Contact">
+                <span>Contact Me - MSN Messenger</span>
+            </div>
+            <div class="window-controls">
+                <button class="minimize">_</button>
+                <button class="maximize">□</button>
+                <button class="close">✕</button>
+            </div>
+        </div>
+        <div class="window-content msn-content">
+            <div class="msn-header">
+                <img src="images/msn-logo.png" alt="MSN">
+                <span>MSN Messenger Service</span>
+            </div>
+            <div class="msn-chat">
+                <div class="chat-message system">
+                    <span>You are now chatting with Kirtan Desai.</span>
+                </div>
+                <div class="chat-message received">
+                    <span class="sender">Kirtan says:</span>
+                    <p>Hi there! Thanks for visiting my portfolio. You can reach me through any of these methods:</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="images/email-icon.png" alt="Email">
+                    <span>Email: krtndesai2004@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <img src="images/linkedin-icon.png" alt="LinkedIn">
+                    <span>LinkedIn: linkedin.com/in/kirtandesai29</span>
+                </div>
+                <div class="contact-item">
+                    <img src="images/github-icon.png" alt="GitHub">
+                    <span>GitHub: github.com/username</span>
+                </div>
+                <div class="contact-item">
+                    <img src="images/phone-icon.png" alt="Phone">
+                    <span>Phone: +91-6355453239</span>
+                </div>
+            </div>
+            <div class="msn-form">
+                <h3>Send me a message</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" class="xp-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" class="xp-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" class="xp-input" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="xp-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="window-status-bar">
+            <span>Online</span>
+        </div>
+    </div>
+
+    <!-- About Me Window -->
+    <div class="window" id="about-window" data-app="about">
+        <div class="window-header">
+            <div class="window-title">
+                <img src="images/my_computer.png" alt="About Me">
+                <span>About Me - My Computer</span>
+            </div>
+            <div class="window-controls">
+                <button class="minimize">_</button>
+                <button class="maximize">□</button>
+                <button class="close">✕</button>
+            </div>
+        </div>
+        <div class="window-menu">
+            <div class="menu-item">File</div>
+            <div class="menu-item">Edit</div>
+            <div class="menu-item">View</div>
+            <div class="menu-item">Tools</div>
+            <div class="menu-item">Help</div>
+        </div>
+        <div class="window-content explorer-content">
+            <div class="explorer-sidebar">
+                <div class="sidebar-item">
+                    <img src="images/folder.png" alt="System Tasks">
+                    <span>System Tasks</span>
+                </div>
+                <div class="sidebar-item">
+                    <img src="images/folder.png" alt="Other Places">
+                    <span>Other Places</span>
+                </div>
+                <div class="sidebar-item">
+                    <img src="images/folder.png" alt="Details">
+                    <span>Details</span>
+                </div>
+            </div>
+            <div class="explorer-main">
+                <div class="about-section">
+                    <img src="images/user-large.png" alt="Profile Picture" class="profile-pic">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm Kirtan Desai, a Computer Science student specializing in Artificial Intelligence and Machine Learning at Manipal Institute of Technology. I'm passionate about developing software solutions and exploring cutting-edge technologies in AI and web development.</p>
+                    
+                    <h3>My Approach</h3>
+                    <p>I believe in creating practical, efficient solutions to real-world problems through technology. My technical foundation in both frontend and backend development, combined with data science skills, allows me to approach projects from multiple perspectives.</p>
+                    
+                    <h3>Academic Journey</h3>
+                    <p>Currently maintaining a CGPA of 8.54/10.00, I've focused my studies on a wide range of subjects from core computer science to specialized AI/ML courses. I enjoy applying theoretical knowledge to practical projects that demonstrate tangible results.</p>
+                    
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always interested in new challenges, collaborative opportunities, and connecting with fellow tech enthusiasts. Feel free to explore my projects and reach out!</p>
+                </div>
+            </div>
+        </div>
+        <div class="window-status-bar">
+            <span>5 objects</span>
+        </div>
+    </div>
+
+    <!-- Error window -->
+    <div class="window error-window" id="error-window">
+        <div class="window-header error-header">
+            <div class="window-title">
+                <span>Error</span>
+            </div>
+            <div class="window-controls">
+                <button class="close">✕</button>
+            </div>
+        </div>
+        <div class="window-content error-content">
+            <div class="error-message">
+                <img src="images/error.png" alt="Error">
+                <p>An unexpected error has occurred.</p>
+            </div>
+            <div class="error-buttons">
+                <button class="xp-button" id="error-ok">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
